@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebCliente</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/menu.css" asp-append-version="true" />
+@*     <link rel="stylesheet" href="~/WebCliente.styles.css" asp-append-version="true" /> *@
+</head>
+<body>
+    <header>
+        <nav style="height:70px">
+            <div>
+                <h1>Logo</h1>
+            </div>
+            <div>
+                <ul id="nav">
+                    <li><a href="/">Personas</a></li>
+                    <li><a href="/">Ejercicio 2</a></li>
+                    <li><a href="/">Ejercicio 3</a></li>
+                    <li><a href="/">Ejercicio 4</a></li>
+                </ul>
+            </div>
+            <div class="menu" id="menu" style="margin-top:5px">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+    <div class="container" style="padding-top:6em">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <input type="hidden" id="hdfOculto" value="@Url.Content("~")" />
+
+
+    <div id="divLoading" style="display:none;background-image:url(../img/loading.gif);
+           position:absolute;top:0;left:0;
+            width:100%;height:100%;
+             background-repeat:no-repeat;background-position:center;z-index:2000">
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2025 - WebCliente - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/generic.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

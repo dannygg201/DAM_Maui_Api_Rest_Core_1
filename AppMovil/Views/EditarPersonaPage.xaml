@@ -1,0 +1,34 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMovil.Views.EditarPersonaPage"
+             Title="Editar Persona">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Editar Persona" 
+                   FontSize="24"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Nombre completo" />
+            <Entry x:Name="NombreCompletoEntry" Placeholder="Nombre completo" />
+
+            <Label Text="Correo electrónico" />
+            <Entry x:Name="CorreoEntry" Placeholder="Correo electrónico" Keyboard="Email" />
+
+            <Label Text="Fecha de nacimiento" />
+            <Entry x:Name="FechaNacimientoEntry" Placeholder="DD/MM/AAAA" />
+
+            <Label Text="Sexo" />
+            <Picker x:Name="SexoPicker"
+        Title="Selecciona sexo"
+        ItemDisplayBinding="{Binding Value}" />
+
+
+            <Button Text="Guardar" 
+                    BackgroundColor="#007AFF" 
+                    TextColor="White"
+                    Clicked="Guardar_Clicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppMovil.Views.NuevaPersonaPage"
+             Title="Nueva Persona">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Nombre completo" />
+            <Entry x:Name="NombreCompletoEntry" Placeholder="Ej: Juan Pérez López" />
+
+            <Label Text="Correo electrónico" />
+            <Entry x:Name="CorreoEntry" Placeholder="correo@ejemplo.com" />
+
+            <Label Text="Fecha de nacimiento" />
+            <Entry x:Name="FechaNacimientoEntry" Placeholder="dd/mm/aaaa" Keyboard="Numeric" />
+
+            <Label Text="Sexo" />
+            <Picker x:Name="SexoPicker"
+                    Title="Selecciona sexo"
+                    ItemDisplayBinding="{Binding Value}" />
+
+            <Button Text="Guardar"
+                    Clicked="Guardar_Clicked"
+                    BackgroundColor="#007AFF"
+                    TextColor="White" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

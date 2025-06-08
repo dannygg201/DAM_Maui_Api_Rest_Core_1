@@ -5,6 +5,12 @@ VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{BAFA7F1F-8A75-42B7-A58F-2A8C2796E3AE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaEntidad", "CapaEntidad\CapaEntidad.csproj", "{881FC804-1E33-4F83-BC74-4FDC8C0EBCE0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCliente", "WebCliente\WebCliente.csproj", "{C301F1D0-A695-4C4C-A501-5C7CF7DF1514}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppMovil", "AppMovil\AppMovil.csproj", "{1AECF84C-DC40-4445-9936-E8C161F40CB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +21,20 @@ Global
 		{BAFA7F1F-8A75-42B7-A58F-2A8C2796E3AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAFA7F1F-8A75-42B7-A58F-2A8C2796E3AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAFA7F1F-8A75-42B7-A58F-2A8C2796E3AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{881FC804-1E33-4F83-BC74-4FDC8C0EBCE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{881FC804-1E33-4F83-BC74-4FDC8C0EBCE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{881FC804-1E33-4F83-BC74-4FDC8C0EBCE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{881FC804-1E33-4F83-BC74-4FDC8C0EBCE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C301F1D0-A695-4C4C-A501-5C7CF7DF1514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C301F1D0-A695-4C4C-A501-5C7CF7DF1514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C301F1D0-A695-4C4C-A501-5C7CF7DF1514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C301F1D0-A695-4C4C-A501-5C7CF7DF1514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AECF84C-DC40-4445-9936-E8C161F40CB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1AECF84C-DC40-4445-9936-E8C161F40CB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1AECF84C-DC40-4445-9936-E8C161F40CB2}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{1AECF84C-DC40-4445-9936-E8C161F40CB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1AECF84C-DC40-4445-9936-E8C161F40CB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1AECF84C-DC40-4445-9936-E8C161F40CB2}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
